@@ -1,0 +1,73 @@
+PROJECT REPORT
+Fake News Detection System (AI & ML Project)
+1. Introduction
+Fake news has become a major problem in the digital world due to the rapid spread of information on social media and news platforms. This project aims to build an AI-based system that can automatically classify news as real or fake using Machine Learning techniques.
+2. Objective
+To detect fake news using machine learning algorithms
+To analyze text data from news articles
+To build a web application for user interaction
+To improve accuracy of classification using NLP techniques
+3. Tools & Technologies Used
+Python
+Pandas
+Scikit-learn
+NLP (Natural Language Processing)
+Flask (for web app)
+HTML, CSS (Frontend)
+Jupyter Notebook / VS Code
+4. Dataset Description
+The dataset used in this project contains two files:
+Fake.csv → Fake news articles
+True.csv → Real news articles
+These datasets are combined into:
+fake_news.csv
+Each record contains:
+Title
+Text
+Subject
+Label (Fake / Real)
+5. System Architecture
+Data Collection (Fake.csv, True.csv)
+Data Preprocessing (cleaning text, removing stopwords)
+Feature Extraction (TF-IDF Vectorizer)
+Model Training (Logistic Regression / Naive Bayes)
+Model Saving (model.pkl, vectorizer.pkl)
+Web Application (Flask app.py)
+User Input Prediction
+6. Project Structure Explanation
+app.py → Flask backend for web application
+train_model.py → Model training script
+create_dataset.py → Combines Fake & True datasets
+visualization.py ⭐ → Shows graphs (pie chart, distribution)
+fake_news.csv → Final dataset
+model.pkl → Saved ML model
+vectorizer.pkl → TF-IDF vectorizer
+templates/index.html → UI page
+static/style.css → Styling
+7. Methodology
+Step 1: Data Preprocessing
+Removing punctuation
+Converting text to lowercase
+Removing stopwords
+Step 2: Feature Extraction
+TF-IDF Vectorization is used to convert text into numerical form
+Step 3: Model Training
+Machine Learning model is trained on labeled dataset
+Step 4: Prediction
+User enters news text
+Model predicts whether news is Fake or Real
+8. Visualization 
+The visualization.py file generates graphs such as:
+Distribution of Fake vs Real news
+Pie chart representation of dataset balance
+9. Results
+The model successfully classifies news articles
+High accuracy achieved using NLP techniques
+Web interface allows easy user interaction
+10. Conclusion
+The Fake News Detection System helps identify misinformation using Machine Learning. It provides a simple and interactive way for users to verify news authenticity.
+11. Future Improvements
+Use Deep Learning (LSTM / BERT)
+Improve accuracy with larger datasets
+Add real-time news scraping
+Deploy on cloud (Heroku / AWS)
